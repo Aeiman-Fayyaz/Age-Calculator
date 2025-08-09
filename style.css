@@ -1,0 +1,74 @@
+body {
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Custom colors from the palette */
+.theme-dark {
+  --bg-primary: #641b2e;
+  --bg-secondary: #8a2d3b;
+  --bg-surface: #1d2025;
+  --text-primary: #fbdb93;
+  --text-on-dark: #fbdb93;
+  --btn-bg: #be5b50;
+  --btn-hover-bg: #8a2d3b;
+  --border-color: #be5b50;
+  --ring-color: #be5b50;
+}
+
+.theme-light {
+  --bg-primary: #fbdb93;
+  --bg-secondary: #be5b50;
+  --bg-surface: #ffffff;
+  --text-primary: #641b2e;
+  --text-on-dark: #fbdb93;
+  --btn-bg: #8a2d3b;
+  --btn-hover-bg: #641b2e;
+  --border-color: #641b2e;
+  --ring-color: #be5b50;
+}
+
+/* Apply custom colors using CSS variables */
+.bg-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.bg-surface {
+  background-color: var(--bg-surface);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-on-dark {
+  color: var(--text-on-dark);
+}
+
+.bg-btn {
+  background-color: var(--btn-bg);
+}
+
+.hover\:bg-btn-hover:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.border-color {
+  border-color: var(--border-color);
+}
+
+.focus\:ring-color:focus {
+  --tw-ring-color: var(--ring-color);
+}
+
+.input-text-color {
+  color: var(--text-primary);
+}
+
+.input-bg-color {
+  background-color: var(--bg-surface);
+}
